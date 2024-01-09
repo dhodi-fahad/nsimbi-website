@@ -1,4 +1,4 @@
-import styles from "./contact.module.css";
+import styles from "./styles.module.css";
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {

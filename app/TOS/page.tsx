@@ -1,4 +1,4 @@
-import styles from "./tos.module.css";
+import styles from "./styles.module.css";
 
 import { Metadata } from 'next';
 
