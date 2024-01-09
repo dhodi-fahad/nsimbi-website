@@ -32,26 +32,12 @@ jobs:
 #          echo "module.exports = { target: 'serverless' }" > next.config.js
 #          npm run build
 
-      - name: Setup Git credentials
-        run: |
-          git config --global user.email "dhodifahad@gmail.com"
-          git config --global user.name "dhodi-fahad"
-          git remote add origin https://dhodi-fahad:${{ secrets.NSIMBIWEBSITE }}@github.com/dhodi-fahad/nsimbi-website.git
-
       - name: Deploy to GitHub Pages
-        run: |
-          git checkout gh-pages
-          git pull origin gh-pages
-          git add .
-          git commit -m "Deploy to GitHub Pages"
-          git push origin gh-pages
-
-      #      - name: Deploy to GitHub Pages
-#        uses: JamesIves/github-pages-deploy-action@4.1.4  # Latest version
-#        with:
-##          ACCESS_TOKEN: ${{ secrets.NsimbiWebsite }}  # GitHub Personal Access Token with repo access, stored as a secret
-#          BRANCH: gh-pages  # Change this to the branch you want to deploy to
-#          FOLDER: out  # Change this to the folder where your static site is exported
+        uses: JamesIves/github-pages-deploy-action@4.1.4  # Latest version
+        with:
+#          ACCESS_TOKEN: ${{ secrets.NsimbiWEBSITE }}  # GitHub Personal Access Token with repo access, stored as a secret
+          BRANCH: main-draft  # Change this to the branch you want to deploy to
+          FOLDER: out  # Change this to the folder where your static site is exported
 
       - name: Cleanup
         run: rm -rf out  # Clean up the generated static files
