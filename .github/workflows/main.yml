@@ -35,7 +35,7 @@ jobs:
       - name: Deploy to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@4.1.4  # Latest version
         with:
-          ACCESS_TOKEN: ${{ secrets.NSIMBIWEBSITE }}  # GitHub Personal Access Token with repo access, stored as a secret
+          ACCESS_TOKEN: ${{ secrets.NsimbiWebsite }}  # GitHub Personal Access Token with repo access, stored as a secret
           BRANCH: gh-pages  # Change this to the branch you want to deploy to
           FOLDER: out  # Change this to the folder where your static site is exported
 
