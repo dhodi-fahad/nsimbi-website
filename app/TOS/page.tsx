@@ -1,4 +1,3 @@
-import {inspect} from "util";
 import styles from "./tos.module.css";
 
 import { Metadata } from 'next';

@@ -1,5 +1,4 @@
 import styles from "./pricing.module.css";
-
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {

@@ -2,17 +2,9 @@
 
 import Image from 'next/image'
 import styles from './page.module.css'
-import Link from "next/link";
-import {InputForm} from "@/components/input";
-
-import {useState} from "react";
-import Menu from "@/components/Menu";
-import Navbar from "@/components/Navbar";
 import Order from "@/components/order";
 
 
-
-const options = ['Option 1', 'Option 2', 'Option 3'];
 export default function Home() {
 
   return (
