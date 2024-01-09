@@ -1,0 +1,41 @@
+name: Build Static Site
+
+on:
+  push:
+    branches:
+      - main  # Set the branch where you want this action to trigger
+  pull_request:
+    branches:
+      - main  # Set the branch where you want this action to trigger
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Use Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: '18'  # Set your desired Node.js version
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Build
+        run: npm run build  # Adjust this command if your build script differs
+
+      - name: Export Next.js static site
+        run: npm run export  # Run the export command to generate the static site
+
+      - name: Deploy to GitHub Pages
+        uses: JamesIves/github-pages-deploy-action@3.7.1  # Adjust version as needed
+        with:
+          ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}  # Make sure to set a GitHub Personal Access Token with repo access and store it as a secret
+          BRANCH: gh-pages  # Change this to the branch you want to deploy to
+          FOLDER: out  # Change this to the folder where your static site is exported
+
+      - name: Cleanup
+        run: rm -rf out  # Clean up the generated static files
