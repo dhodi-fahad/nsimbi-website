@@ -1,0 +1,1 @@
+(self.webpackChunk_N_E=self.webpackChunk_N_E||[]).push([[327],{2254:function(n,s,t){Promise.resolve().then(t.t.bind(t,2222,23))},2222:function(n){n.exports={contact:"styles_contact__Y6lv1",socials:"styles_socials__n1jgg"}}},function(n){n.O(0,[971,938,744],function(){return n(n.s=2254)}),_N_E=n.O()}]);
