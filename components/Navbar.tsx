@@ -17,8 +17,8 @@ const Navbar: React.FC<NavbarProps> = ({ toggleMenu }) => {
                         className={styles.logo}
                         src="/logo.svg"
                         alt="Nsimbi Logo"
-                        width={18}
-                        height={18}
+                        width={24}
+                        height={24}
                         priority
                     />
                 </Link>

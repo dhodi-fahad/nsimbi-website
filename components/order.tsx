@@ -25,19 +25,19 @@ const Order = () => {
           <h1>
               Flexible grocery shopping and delivery
           </h1>
-          <p>Find a the shop, market or supermarket from your local market.</p>
+          <p>We shop and deliver your groceries from your local market or store</p>
 
-          <select className={styles.select} value={selectedOption} onChange={handleSelectChange} >
-              {marketOptions.map((option, index) => (
-                  <option key={index} value={option}>
-                      {option}
-                  </option>
-              ))}
-          </select>
+          {/*<select className={styles.select} value={selectedOption} onChange={handleSelectChange} >*/}
+          {/*    {marketOptions.map((option, index) => (*/}
+          {/*        <option key={index} value={option}>*/}
+          {/*            {option}*/}
+          {/*        </option>*/}
+          {/*    ))}*/}
+          {/*</select>*/}
 
           <button className={styles.button} onClick={handleContinue}>
               <span>
-                Continue
+                Continue to Order
               </span>
               <FaWhatsapp />
           </button>

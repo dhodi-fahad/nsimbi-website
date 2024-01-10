@@ -8,20 +8,20 @@ const Menu = () => {
         <nav className={styles.nav}>
             <ul>
                 <li>
-                    <Link href="TOS" >
+                    <Link href="TOS">
                         Terms of Service
                     </Link>
                 </li>
                 <li>
-                    <Link href="pricing" >
+                    <Link href="pricing">
                         Pricing
                     </Link>
                 </li>
-                <li>
-                    <Link href="about" >
-                        About Us
-                    </Link>
-                </li>
+                {/*<li>*/}
+                {/*    <Link href="about">*/}
+                {/*        About Us*/}
+                {/*    </Link>*/}
+                {/*</li>*/}
 
                 <li>
                     <Link href="contact">

@@ -2,7 +2,7 @@ import styles from "./styles.module.css";
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-    title: 'About Us| Nsimbi',
+    title: 'About Us | Nsimbi',
 };
 const Page = () => {
     return (

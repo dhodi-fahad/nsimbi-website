@@ -17,16 +17,7 @@ export default function Home() {
                 </div>
             </div>
 
-            <h1>How it works.</h1>
-            <div className={styles.card}>
-                <h3>
-                    Step 2
-                </h3>
-                <h2>
-                    Pick Your Market
-                </h2>
-                <p>Select the specific market for your shopping.</p>
-            </div>
+
 
         </div>
     )

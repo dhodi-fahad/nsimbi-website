@@ -1,6 +1,6 @@
 .app {
     /*position: absolute;*/
-    width: 250px;
+    width: 350px;
     /*height: 72vh;*/
     background: black;
     /*transform: translateX(-100%);*/
@@ -10,7 +10,7 @@
 }
 .app h1{
     font-family: 'EB Garamond', serif;
-    font-size: 3rem;
+    font-size: 4rem;
     font-weight: 400;
     margin-bottom: 20px;
 }
@@ -43,11 +43,11 @@
     cursor: pointer;
 }
 .button span{
-    padding: 0px 10px;
+    padding: 0px 5px;
 }
 
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1024px) {
     .app {
         width: 100%;
     }
